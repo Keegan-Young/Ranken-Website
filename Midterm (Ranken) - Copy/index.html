@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon"
+		href="images/ranken_favicon.png"
+		type="ranken.png"
+        alt="Ranken Favicon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/source.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <title>Ranken | Home</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.ranken.edu"target="_blank">
+        <img src="images/ranken.jpg"
+            alt="Ranken"
+            height="200"
+            width="400"></a>
+
+        <h2>Welcome to Ranken</h2>
+
+        <h3>The Technical College of Your Dreams</h3>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">What is Ranken?</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-container">
+
+            <div class="topnav">
+
+                <a href="index.html" class="active">Home</a>
+
+                <div id="myLinks">
+
+                    <a href="about.html">What is Ranken?</a>
+
+                    <a href="form_submit.html">Features</a>
+
+                    <a href="contact.html">Contact</a>
+
+                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                 </a>
+
+            </div>
+
+        </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+        </script>
+    </header>
+
+    <main id="home">
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <div class="numbertext">1/4</div>
+
+                <img src="images/RANKEN1.JPG"
+                    alt="Ranken St. Louis"> 
+                <div class="border_box"></div>
+
+                <div class="text">Ranken St. Louis</div>
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <div class="numbertext">2/4</div>
+    
+                <img src="images/RANKEN2.JPG"
+                    alt="Ranken St. Louis">
+                <div class="border_box"></div>
+ 
+    
+                <div class="text">Ranken St. Louis</div>
+    
+            </div>
+            
+            <div class="mySlides fade">
+
+                <div class="numbertext">3/4</div>
+    
+                <img src="images/RANKEN3.JPG"
+                    alt="Ranken St. Louis">
+                <div class="border_box"></div>
+ 
+    
+                <div class="text">Ranken Perryville</div>
+    
+            </div>
+
+            <div class="mySlides fade">
+
+                <div class="numbertext">4/4</div>
+    
+                <img src="images/RANKEN4.JPG"
+                    alt="Ranken St. Louis">
+                <div class="border_box"></div>
+
+    
+                <div class="text">Ranken Wentzville</div>
+    
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+             showSlides(slideIndex += n);
+            }
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+        </script>
+
+        <section id="home_sec">
+            <h2>Welcome to Ranken</h2>
+
+            <p>
+                Ranken Technical College is a leading Missouri technical college, and a smart choice for anyone motivated to build a successful 
+                career. Ranken students don’t just graduate with a tech school degree – they graduate ready to work.
+
+                <br>
+                <br>
+
+                Your career is our priority and it shows. Tech schools give you the training and skills you need to land the job you want – and 
+                many Ranken grads land jobs within six months!
+
+                <br>
+                <br>
+
+                With more hands-on training than anyone else, programs for only the most in-demand technical careers, and strong relationships 
+                with major employers, a Ranken education helps you launch or advance a successful career in the field you choose.
+            </p>
+
+                <h3>Choose A Program</h3>
+
+            <a href="https://ranken.edu/divisions/automotive/"target="_blank">
+            <input type="button"
+                name="auto"
+                id="auto"
+                value="Automotive"/></a>
+
+            <a href="https://ranken.edu/programs/architecture/"target="_blank">
+            <input type="button"
+                name="arch"
+                id="arch"
+                value="Architecture"/></a>
+
+            <a href="https://ranken.edu/divisions/construction/"target="_blank">
+            <input type="button"
+                name="cons"
+                id="cons"
+                value="Construction"/></a>
+
+            <a href="https://ranken.edu/divisions/electrical/"target="_blank">
+            <input type="button"
+                name="elec"
+                id="elec"
+                value="Electrical"/></a>
+
+            <a href="https://ranken.edu/divisions/information-technology/"target="_blank">
+            <input type="button"
+                name="IT"
+                id="IT"
+                value="Information Technology"/></a>
+
+            <a href="https://ranken.edu/divisions/manufacturing/"target="_blank">
+            <input type="button"
+                name="manu"
+                id="manu"
+                value="Manufacturing"/></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; Keegan Young, Ranken 2019
+            <br>
+            <a href="#top">Back to Top</a>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/rankentech/"target="_blank">
+            <i class="fa fa-facebook-square fa-4x"></i></a>
+                
+            <a href="https://www.twitter.com/ranken?lang=en"target="_blank">
+            <i class="fa fa-twitter-square fa-4x"></i></a>
+
+            <a href="https://www.instagram.com/explore/locations.252328045/ranken-technical-college"target="_blank">
+            <i class="fa fa-instagram fa-4x"></i></a>
+
+            <a href="https://www.ranken.edu/" target="_blank">
+            <i class="fas fa-school fa-4x"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
